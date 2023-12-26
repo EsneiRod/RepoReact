@@ -1,0 +1,30 @@
+ .input-container {
+    margin-bottom: 10px; 
+  }
+  
+  .miInput {
+    width: 100%;         /* Ajusta el ancho según tus necesidades */
+    padding: 8px;        /* Ajusta el relleno según tus necesidades */
+    border: 1px solid #ccc;
+    border-radius: 4px;  /* Ajusta el radio según tus necesidades */
+    box-sizing: border-box;
+  }
+
+  .link-container {
+    display: block;
+    margin-top: 10px; 
+  }
+
+  .sectionForm{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 2%;
+  }
+
+  .botonIngresar{
+    width: 100%;
+  }
+
