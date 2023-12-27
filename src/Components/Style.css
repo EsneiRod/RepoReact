@@ -3,10 +3,10 @@
   }
   
   .miInput {
-    width: 100%;         /* Ajusta el ancho según tus necesidades */
-    padding: 8px;        /* Ajusta el relleno según tus necesidades */
+    width: 100%;         
+    padding: 8px;        
     border: 1px solid #ccc;
-    border-radius: 4px;  /* Ajusta el radio según tus necesidades */
+    border-radius: 4px;  
     box-sizing: border-box;
   }
 
@@ -24,7 +24,37 @@
     padding: 2%;
   }
 
-  .botonIngresar{
+  .boton01{
     width: 100%;
+  }
+
+  .footer {
+    padding: 20px;
+    justify-content: center;
+  }
+
+
+  .header {
+    width: 100%;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: right;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: blue;  
   }
 

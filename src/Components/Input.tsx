@@ -3,11 +3,11 @@ import './Style.css';
 interface variables {
     tipo: string,
     placeholder: string,
-    id: string,
-    nombre: string
+    id?: string,
+    nombre?: string
 }
 
-const InputForm = ({tipo, placeholder}: variables) => {
+const Input= ({tipo, placeholder}: variables) => {
   return (
     <section className="input-container">
       <input 
@@ -15,10 +15,9 @@ const InputForm = ({tipo, placeholder}: variables) => {
         placeholder ={placeholder}
         className="miInput"
         />
-
     </section>
   )
 }
 
-export default InputForm
+export default Input
 
