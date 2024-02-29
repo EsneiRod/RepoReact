@@ -4,7 +4,7 @@ import '../App.css';
 import InputForm from './InputForm';
 import Button from './Button';
 import { useNavigate } from 'react-router-dom';
-import { ACCESO_OK, ACCESO_DENEGADO, DATOS_INCORRECTOS} from '../Constants/NamePath';
+import { MSG_ACCESO, CONS_URL} from '../Constants/NamePath';
 import withReactContent from 'sweetalert2-react-content';
 import Swal from 'sweetalert2';
 
@@ -25,14 +25,14 @@ const Loggin = () => {
     if (usuariosRegistrados.find((user) => user.usuario === usuario && user.clave === clave)) {
       MySwal.fire({
         title: 'ACCESO',
-        text: ACCESO_OK,
+        text: MSG_ACCESO.ACCESO_OK,
         icon: 'success',
       });
-      navegar('/MostrarDatos');
+      navegar(CONS_URL.PAGE_MOSTRARDATOS);
     } else {
       MySwal.fire({
-        title: ACCESO_DENEGADO,
-        text: DATOS_INCORRECTOS,
+        title: MSG_ACCESO.ACCESO_DENEGADO,
+        text: MSG_ACCESO.DATOS_INCORRECTOS,
         icon: 'error',
       });
     }
